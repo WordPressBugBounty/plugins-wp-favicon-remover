@@ -3,8 +3,8 @@ Contributors: Hiroaki Miyashita
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WN7Y2442JPRU6
 Tags: favicon, WordPress, 5.4, ico, delete, remove
 Requires at least: 5.3
-Tested up to: 5.4
-Stable tag: 1.0.2
+Tested up to: 6.8.3
+Stable tag: 1.0.3
 Requires PHP: 5.2.4
 License: GPLv2 or later
 
@@ -33,6 +33,9 @@ Nothing.
 Nothing.
 
 == Changelog ==
+
+= 1.0.3 =
+* Bugfix: 404 error.
 
 = 1.0.2 =
 * readme.txt

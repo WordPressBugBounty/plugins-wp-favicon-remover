@@ -4,13 +4,13 @@ Plugin Name: WP Favicon Remover
 Plugin URI: https://wpgogo.com/plugin/wp_favicon_remover.html
 Description: This plugin adds the functionality to remove the WordPress default favicon since WordPress 5.4.
 Author: Hiroaki Miyashita
-Version: 1.0.2
+Version: 1.0.3
 Author URI: https://wpgogo.com/
 Text Domain: wp-favicon-remover
 Domain Path: /
 */
 
-/*  Copyright 2020 Hiroaki Miyashita
+/*  Copyright 2020 - 2025 Hiroaki Miyashita
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -30,5 +30,10 @@ Domain Path: /
 add_action( 'do_faviconico', 'wp_favicon_remover');
 function wp_favicon_remover() {
 	exit;
+}
+
+add_action( 'wp_head', 'wp_favicon_remover_wp_head' );
+function wp_favicon_remover_wp_head() {
+    echo '<link rel="icon" href="data:,">' . "\n";
 }
 ?>
